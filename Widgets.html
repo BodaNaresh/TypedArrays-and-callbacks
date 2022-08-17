@@ -1,0 +1,201 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title>jQuery UI Accordion - Default functionality</title>  
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
+  <link rel="stylesheet" href="/resources/demos/style.css">  
+  <style>  
+    .ui-widget-header,.ui-state-default, ui-button{  
+       background:#b9cd6d;  
+       border: 1px solid #b9cd6d;  
+       color: #FFFFFF;  
+       font-weight: bold;  
+    }    
+   .ui-menu {  
+       width: 200px;  
+    }  
+    fieldset {  
+      border: 0;  
+    }  
+    label {  
+      display: block;  
+      margin: 30px 0 0 0;  
+    }  
+    select {  
+      width: 200px;  
+    }  
+    .overflow {  
+      height: 200px;  
+    }  
+    #spinner input {width: 100px} 
+
+    #tab1{font-size: 14px;}  
+    .ui-widget-header {  
+      background:lightpink;  
+      border: 1px solid #b9cd6d;  
+      color: lightyellow;  
+      font-weight: bold;  
+    }  
+ </style>
+</head>  
+<body>  
+    <script src="Widgets.js"></script>
+    <h1><b>Widgets in jQuery</b></h1>
+    <h2>Accordion</h2>
+  <div id="accordion">  
+  <h3>What is the Company Name?</h3>  
+  <div>  
+    <p>  
+   The Company Name is Bhavna Corp Established in 2012 in Noida.
+   it was the best tech company to work for 2022 
+    </p>    
+  </div>  
+  <h3>Why is it called Best Tech Company</h3>  
+  <div>  
+    <p>  
+   Because the employees are vrey talented and doing good work to grow company as good to great
+    </p>  
+  </div>  
+  <h3>Where is it Located?</h3>  
+  <div>  
+    <p>  
+    it is located in two places in india
+    1. Noida
+    2.Hyderabad
+    </p>  
+  </div>  
+  <h3>Why BhavnaCorp</h3>  
+  <div>  
+    <ul>  
+      <li>Training by Dotnet Professionals</li>  
+      <li>Get an opportunity to work on real time projects</li>  
+       <li>Interaction with Industry Experts</li>  
+        <li>Small Batches to focus on each Employee to grow</li>  
+    </ul>  
+  </div>  
+  </div>  
+  <div id="autocomplete">
+    <h2>Autocomplete</h2>
+    <div class="ui-widget">  
+        <p>Available Cities:</p>  
+         <label for="tags">Input: </label>  
+         <input id="tags">  
+    </div> 
+  </div>
+  <div id="datepicker">
+    <h2>Date Picker</h2>
+    <p>Enter Date: <input type="text" id="dtp1"></p>  
+    <p>Alternate Date: <input type="text" id="dtp2"></p> 
+  </div>
+  <div id="Dialog">
+    <h2>Dialog</h2>
+    <div id="dialog" title="Sports Team:India (2011)">"India won the world cup under the dhoni captency " </div>  
+    <button id="opener">Open Dialog</button>  
+  </div>
+  <div>
+    <h2>Menu</h2>
+    <ul id="menu">  
+        <li><a href="#">C</a></li>  
+        <li><a href="#">C++</a></li>  
+        <li><a href="#">JSF</a></li>  
+        <li><a href="#">HTML5</a></li>  
+        <li><a href="#">Java</a>  
+           <ul>  
+              <li><a href="#">Core Java</a></li>  
+              <li><a href="#">J2EE</a></li>  
+              <li><a href="#">Spring</a></li>  
+              <li><a href="#">Hibernate</a></li>  
+              <li><a href="#">Struts</a></li>  
+            </ul>  
+        </li>  
+     </ul>  
+  </div>
+  <div>
+    <h2>Progressbar</h2>
+    <div id="progressbar"></div>  
+  </div>
+  <div>
+    <h2>Select Menu</h2>
+    <form action="#">  
+        <fieldset>  
+            <label for="speed">Select a speed</label>  
+            <select name="speed" id="speed">  
+              <option>Slower</option>  
+              <option>Slow</option>  
+              <option selected="selected">Medium</option>  
+              <option>Fast</option>  
+              <option>Faster</option>  
+            </select>  
+         <label for="Bikes">Select a file</label>  
+            <select name="Bikes" id="Bikes">  
+              <optgroup label="Normal Bikes">  
+                <option value="Honda">Honda</option>  
+                <option value="Pulsur">Pulsur</option>  
+              </optgroup>  
+              <optgroup label="Other Bikes">  
+                <option value="bullet">Bullet</option>  
+                <option value="Apache">Apache</option>  
+              </optgroup>  
+            </select>  
+         <label for="number">Select a number</label>  
+            <select name="number" id="number"> 
+              <option>60</option>  
+              <option>70</option>  
+              <option>80</option>   
+              <option>100</option>  
+              <option>110</option>  
+              <option>130</option>  
+              <option>140</option>  
+              <option>150</option>  
+            </select>  
+          </fieldset>  
+        </form>  
+  </div>
+  <div>
+    <h2>Slider</h2>
+    <div id="slider"></div>  
+  </div>
+
+  <div>
+    <h2>Spinner</h2>
+    <input type="text" id="spinner" value="0" /> 
+  </div>
+
+  <div>
+    <h2>Tabs</h2>
+    <div id="tab1">  
+        <ul>  
+           <li><a href="#tab2">Poem</a></li>  
+           <li><a href="#tab3">Joke</a></li>  
+           <li><a href="#tab4">Quote</a></li>  
+        </ul>  
+        <div id="tab2">  
+           <p>India won two world cups,<br/>  
+            now india team has best squad<br/>  
+            </p>  
+        </div>  
+        <div id="tab3">  
+            <p><b>India</b><br/>  
+            india got independence on 1947 aug 15th<br/>  
+            india have best constituency<br/>   
+           
+        </div>  
+        <div id="tab4">  
+          <p>" The whole secret of existence is to have no fear."  
+                 Buddha</p>  
+        </div>  
+     </div>  
+  </div>
+  <div>
+    <h2>ToolTip</h2>
+    <label for="comment">What is your comment:</label>  
+    <input id="tooltip1" title="We are asking your comment just for feedback">  
+    <p><a id="tooltip2" href="#" title="Bhavncorp is the best Company.">  
+      I also have a tooltip  
+    </a></p>  
+  </div>
+ </body>  
+</html>  

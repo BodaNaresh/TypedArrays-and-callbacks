@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="en">  
+   <head>  
+      <meta charset="utf-8">  
+      <title>jQuery UI hide Example</title>  
+      <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+      <!-- CSS -->  
+        <style>  
+            .toggler { width: 500px; height: 200px; }  
+                #button1 { padding: .5em 1em; text-decoration: none; }  
+                #button2 { padding: .5em 1em; text-decoration: none; }
+                #button3 { padding: .5em 1em; text-decoration: none; } 
+                #button4 { padding: .5em 1em; text-decoration: none; }  
+                #effect { width: 240px; height: 160px; padding: 0.4em; position: relative; }  
+                #effect h3 { margin: 0; padding: 0.4em; text-align: center; }  
+                .elemClass {  
+                width: 300px;  
+                height: 100px;  
+                background-color: #76eec6;  
+                }  
+            .myClass {  
+                font-size: 30px; background-color: #eed5b7; color: #0000ee;  
+            }  
+            .LargeClass  
+            {  
+                font-family: NewTimesRoman;  
+                font-size: large;  
+                font-weight: bold;  
+                color: Red;  
+            }  
+            .switchclass  
+            {  
+                font-family: Arial;  
+                font-size: small;  
+                font-weight: bold;  
+                color: Blue;  
+            }  
+            #box {  
+                height: 100px;  
+                width: 100px;  
+                background: #7fffd4;  
+            }  
+        </style>  
+   </head>  
+   <body>  
+    <script src="Effects.js"></script>
+      <div class="toggler">  
+      <div id="effect">  
+         <h3 class="ui-widget-header ui-corner-all">Hide and Show</h3>  
+         <p>  
+            Hyderabad is one of the best city in india. there were many people from different staes we can see in hyderabad.  
+         </p>  
+      </div>  
+     
+      <a href="#" id="button1" class="ui-state-default ui-corner-all">Hide</a>
+      <a href="#" id="button2" class="ui-state-default ui-corner-all">Show</a> 
+      <a href="#" id="button3" class="ui-state-default ui-corner-all">Toggle</a>  
+      <a href="#" id="button4" class="ui-state-default ui-corner-all">Toggle Animation</a>  
+    </div>  
+      <div>
+        <div id=animTarget class="elemClass">  
+            Hello! Hyderabad 
+         </div>  
+         <button class="button" id="add">Add Class</button>  
+         <button class="button" id="remove">Remove Class</button>  
+      </div>
+      <div>
+        <h3>Switch class</h3>
+        <div class="switchclass">  
+            You are here at Hyderabad  
+          </div>  
+          <div class="switchclass">  
+            Hyderabad is one of the best city in india. there were many people from different staes we can see in hyderabad.  
+          </div>  
+          <br />  
+          <input type="button" id="btnSwitch" value="Switch Class" />  
+      </div>
+      <div>
+        <h2>Ui Effect</h2>
+        <div id="box">Click here to<br/><b>Explode Me!</b></div>  
+      </div>
+   </body>  
+</html>  
+
+ 
